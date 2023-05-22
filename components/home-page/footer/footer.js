@@ -148,7 +148,7 @@ export default function Footer() {
       <SocialMediaContainer>
         <SocialMediaWrapper>
           <SocialLogo to="#" />
-          <Text color="#fff" marginBottom="16px">
+          <Text fontSize="md" color="#fff" marginBottom="16px">
             cohico © 2023
           </Text>
           <SocialIcons>

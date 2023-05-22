@@ -94,7 +94,7 @@ export default function PostContent(props) {
     },
   };
   return (
-    <Flex
+    <Box
       minW="22rem"
       mx="0"
       bgGradient="linear(to-b, green.200, gray.500)"
@@ -124,6 +124,6 @@ export default function PostContent(props) {
           </ReactMarkdown>
         </Box>
       </Box>
-    </Flex>
+    </Box>
   );
 }
