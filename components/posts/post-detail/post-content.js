@@ -94,7 +94,12 @@ export default function PostContent(props) {
     },
   };
   return (
-    <Flex minW="22rem" mx="0" bgGradient="linear(to-b, green.200, gray.500)">
+    <Flex
+      minW="22rem"
+      mx="0"
+      bgGradient="linear(to-b, green.200, gray.500)"
+      minH="100vh"
+    >
       <Box
         as="article"
         width="95%"
@@ -107,7 +112,6 @@ export default function PostContent(props) {
         padding="0"
         overflow="hidden"
         justifySelf="center"
-        minH="100vh"
       >
         <PostHeader title={post.title} image={imagePath} />
         <Box padding={["1rem", "2rem"]}>
