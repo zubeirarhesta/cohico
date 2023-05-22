@@ -149,7 +149,7 @@ export default function Footer() {
         <SocialMediaWrapper>
           <SocialLogo to="#" />
           <Text as="small" color="#fff" marginBottom="16px">
-            cohico © 2020
+            cohico © 2023
           </Text>
           <SocialIcons>
             {icons.map((icon) => (

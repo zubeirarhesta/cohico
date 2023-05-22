@@ -14,7 +14,7 @@ export default function MainNavigation() {
       minW="22rem"
       width="100%"
       align="center"
-      px="0.5rem"
+      px="1rem"
       backdropFilter="saturate(180%) blur(5px)"
       zIndex="1"
       top={0}
@@ -56,7 +56,7 @@ export default function MainNavigation() {
         fontFamily={nunito}
         p={["2", "4"]}
         fontWeight="bold"
-        fontSize={["l", "xl"]}
+        fontSize={["lg", "xl"]}
         color="whiteAlpha.600"
         transition={animate}
         _hover={{
@@ -73,7 +73,7 @@ export default function MainNavigation() {
         ml={["2px", "5px"]}
         p={["2", "4"]}
         fontWeight="bold"
-        fontSize={["l", "xl"]}
+        fontSize={["lg", "xl"]}
         color="whiteAlpha.600"
         transition={animate}
         _hover={{
