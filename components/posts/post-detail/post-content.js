@@ -91,7 +91,12 @@ export default function PostContent(props) {
     },
   };
   return (
-    <Flex minW="22rem" mx="0" bgGradient="linear(to-b, green.200, gray.500)">
+    <Flex
+      minW="22rem"
+      mx="0"
+      bgGradient="linear(to-b, green.200, gray.500)"
+      height="full"
+    >
       <Box
         as="article"
         width="95%"
