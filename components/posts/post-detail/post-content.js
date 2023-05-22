@@ -24,7 +24,7 @@ export default function PostContent(props) {
     height: "auto",
 
     /* Set up positioning */
-    position: "fixed",
+
     top: "0",
     left: "0",
   };
