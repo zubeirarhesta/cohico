@@ -38,6 +38,9 @@ export default function PostContent(props) {
             alt={image.properties.alt}
             width={600}
             height={300}
+            style={{
+              marginTop: "2rem",
+            }}
           />
         );
       }
@@ -91,12 +94,7 @@ export default function PostContent(props) {
     },
   };
   return (
-    <Flex
-      minW="22rem"
-      mx="0"
-      bgGradient="linear(to-b, green.200, gray.500)"
-      height="105vh"
-    >
+    <Flex minW="22rem" mx="0" bgGradient="linear(to-b, green.200, gray.500)">
       <Box
         as="article"
         width="95%"
@@ -109,6 +107,7 @@ export default function PostContent(props) {
         padding="0"
         overflow="hidden"
         justifySelf="center"
+        minH="100vh"
       >
         <PostHeader title={post.title} image={imagePath} />
         <Box padding={["1rem", "2rem"]}>
