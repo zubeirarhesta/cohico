@@ -90,6 +90,7 @@ export default function Footer() {
             focusBorderColor="#b1b1b1"
             _placeholder={{
               color: "#b1b1b1",
+              textAlign: "center",
             }}
             transition="all 0.3s ease-in-out"
             _hover={{
