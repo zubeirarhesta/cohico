@@ -95,7 +95,7 @@ export default function PostContent(props) {
       minW="22rem"
       mx="0"
       bgGradient="linear(to-b, green.200, gray.500)"
-      height="full"
+      height="105vh"
     >
       <Box
         as="article"
