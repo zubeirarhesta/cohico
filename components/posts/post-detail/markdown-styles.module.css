@@ -1,0 +1,32 @@
+.reactMarkDown {
+  padding: 0 1rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+.reactMarkDown h2 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+}
+
+.reactMarkDown img {
+  margin-top: 10px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.reactMarkDown img:hover {
+  transform: scale(1.03);
+}
+
+.reactMarkDown ul {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  list-style: disc outside none;
+}
+
+.reactMarkDown ul li {
+  margin-left: 2em;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
