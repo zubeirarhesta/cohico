@@ -14,20 +14,6 @@ SyntaxHighlighter.registerLanguage("css", css);
 export default function PostContent(props) {
   const { post } = props;
   const imagePath = `/images/posts/${post.slug}/${post.image}`;
-  const bgStyle = {
-    /* Set rules to fill background */
-    minHeight: "100%",
-    minWidth: "1024px",
-
-    /* Set up proportionate scaling */
-    width: "100%",
-    height: "auto",
-
-    /* Set up positioning */
-
-    top: "0",
-    left: "0",
-  };
 
   const customRenderer = {
     /* img(image) {
@@ -111,8 +97,7 @@ export default function PostContent(props) {
     <Box
       minW="22rem"
       mx="0"
-      bgGradient="linear(to-b, green.200, gray.500)"
-      sx={bgStyle}
+      /* bgGradient="linear(to-b, green.200, gray.500)" */
     >
       <Box
         as="article"
