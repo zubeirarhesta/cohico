@@ -17,7 +17,7 @@ export default function PostContent(props) {
   const bgStyle = {
     /* Set rules to fill background */
     minHeight: "100%",
-    MinWidth: "1024px",
+    minWidth: "1024px",
 
     /* Set up proportionate scaling */
     width: "100%",
