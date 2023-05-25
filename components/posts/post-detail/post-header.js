@@ -34,7 +34,7 @@ export default function PostHeader(props) {
         backdropBlur="1px"
         color="blackAlpha.700"
         _hover={{
-          backdropBrightness: "60%",
+          backdropBrightness: "80%",
           color: "black",
         }}
       >

@@ -87,6 +87,15 @@ export default function Hero() {
             code, hike, cook with me
           </Highlight>
         </Text>
+        <Text
+          fontFamily={nunito}
+          mt={["7px", "10px"]}
+          fontWeight="bold"
+          fontSize={["0.8rem", "1.1rem", "1.2rem"]}
+          color="white"
+        >
+          developed by zubeir arhesta
+        </Text>
       </Box>
     </Flex>
   );

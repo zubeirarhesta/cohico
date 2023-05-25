@@ -126,22 +126,22 @@ export default function Footer() {
       <FooterLinksContainer>
         <FooterLinksWrapper>
           <FooterLinkItems title="About">
-            <FooterLink to="#" content="Motivation" />
-            <FooterLink to="#" content="What's next?" />
+            <FooterLink to="/motivation" content="Motivation" />
+            <FooterLink to="/what-is-next" content="What's next?" />
           </FooterLinkItems>
           <FooterLinkItems title="Contact">
             <FooterLink to="/contact" content="Contact us" />
-            <FooterLink to="#" content="Feedback" />
+            <FooterLink to="/feedback" content="Feedback" />
           </FooterLinkItems>
         </FooterLinksWrapper>
         <FooterLinksWrapper>
           <FooterLinkItems title="Service">
-            <FooterLink to="#" content="Mountain Travel" />
-            <FooterLink to="#" content="Daput Abaty" />
+            <FooterLink to="/mountain-travel" content="Mountain Travel" />
+            <FooterLink to="/dapur-abaty" content="Daput Abaty" />
           </FooterLinkItems>
           <FooterLinkItems title="Donation">
-            <FooterLink to="#" content="Yayasan Anti Tar" />
-            <FooterLink to="#" content="Bless Ma" />
+            <FooterLink to="/to-be-named" content="to be named" />
+            <FooterLink to="/to-be-named" content="to be named" />
           </FooterLinkItems>
         </FooterLinksWrapper>
       </FooterLinksContainer>

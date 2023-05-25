@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   FormControl,
+  FormHelperText,
   FormLabel,
   Heading,
   Input,
@@ -162,6 +163,9 @@ export default function ContactForm() {
                 onChange={(event) => setEnteredEmail(event.target.value)}
                 sx={inputStyle}
               />
+              <FormHelperText>
+                Please use your less important email.
+              </FormHelperText>
             </Box>
             <Box flex="1" minWidth="10rem">
               <FormLabel htmlFor="name" sx={labelStyle}>
