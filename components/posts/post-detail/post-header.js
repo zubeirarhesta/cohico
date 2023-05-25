@@ -21,7 +21,7 @@ export default function PostHeader(props) {
     fontWeight: "bold",
     fontSize: "20px",
     minHeight: "10rem",
-    backdropBrightness: "30%",
+    backdropBrightness: "50%",
     transition: "all 0.3s ease-in-out",
     bgGradient: "linear(to-b, rgba(0,0,0,0),  rgba(215, 240, 235, 1))",
   };
@@ -31,10 +31,9 @@ export default function PostHeader(props) {
       <Box
         sx={innerBoxStyles}
         backdropFilter="auto"
-        backdropBlur="1px"
         color="blackAlpha.700"
         _hover={{
-          backdropBrightness: "80%",
+          backdropBrightness: "90%",
           color: "black",
         }}
       >
