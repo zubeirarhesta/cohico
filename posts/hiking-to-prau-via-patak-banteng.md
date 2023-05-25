@@ -23,6 +23,8 @@ const semangat = `Saya mau mendaki ${gunung}`;
 function printSemangat() {
   console.log(semangat);
 }
+
+printSemangat();
 ```
 
 &nbsp;
