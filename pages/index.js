@@ -11,7 +11,7 @@ export default function HomePage(props) {
   return (
     <Fragment>
       <Head>
-        <title>cohico</title>
+        <title>zmarhesta</title>
         <meta name="description" content="code, hike, cook with me" />
       </Head>
       <Hero />
