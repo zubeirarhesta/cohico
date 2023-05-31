@@ -6,7 +6,7 @@ export default function FooterLinksContainer({ children }) {
       width="100%"
       maxWidth="1000px"
       justify={["center"]}
-      py={["2rem", "auto"]}
+      py={["1.5rem", "auto"]}
     >
       {children}
     </Flex>

@@ -4,7 +4,7 @@ export default function FooterLinkItems(props) {
   return (
     <Flex
       direction="column"
-      align="flex-start"
+      align={["center"]}
       margin={["8px", "16px"]}
       textAlign="left"
       width={["120px", "160px"]}

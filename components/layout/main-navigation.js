@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Image, Spacer } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Spacer, Text } from "@chakra-ui/react";
 import Link from "next/link";
 
 export default function MainNavigation() {
@@ -24,31 +24,33 @@ export default function MainNavigation() {
         flexDirection="row"
         justifyContent="center"
         alignItems="center"
-        transition={animate}
+        /* transition={animate}
         _hover={{
           transform: [
             "translateY(-0.2rem) translateX(0.2rem)",
-            "translateY(-0.4rem) translateX(0.4rem)",
-          ],
-        }}
+            "translateY(-0.4rem) translateX(0.4rem)",]
+            
+        }} */
       >
         <Heading
           ml={["5px", "10px"]}
           fontSize={["1.7rem", "1.7rem", "2rem"]}
           fontFamily={nunito}
-          color="white"
+          color="whiteAlpha.600"
+          transition={animate}
+          _hover={{
+            color: "white",
+          }}
         >
-          <Link href="/" style={{ color: "white" }}>
-            cohico
-          </Link>
+          <Link href="/" /* style={{ color: "white" }} */>zmarhesta</Link>
         </Heading>
-        <Image
+        {/* <Image
           ml={["5px", "7px"]}
           src="/images/cloud.png"
           alt="cloud icon"
           boxSize={["25px", "27px", "30px"]}
           objectFit="cover"
-        />
+        /> */}
       </Box>
 
       <Spacer />

@@ -20,14 +20,14 @@ export default function SocialLogo(props) {
       }}
     >
       <Text padding="0" marginRight="7px" fontWeight="bold">
-        cohico
+        zmarhesta
       </Text>
-      <Image
+      {/* <Image
         src="/images/cloud.png"
         alt="cloud icon"
         boxSize={["25px", "27px", "30px"]}
         objectFit="cover"
-      />
+      /> */}
     </Link>
   );
 }

@@ -46,33 +46,54 @@ export default function Hero() {
         /* bgColor="blackAlpha.500" */ // addition
         mt="2rem"
         p={["0.5rem", "1rem"]}
-        w={["2xs", "sm", "md"]}
-        border="3px solid white"
+        w={["xs", "sm", "2xl"]}
+        /* border="3px solid white" */
+        borderRadius="10px"
         display="flex"
         flexDirection="column"
         alignItems="center"
         textAlign="center"
+        bg="blackAlpha.300"
       >
-        <Heading
-          fontFamily={nunito}
-          as="h1"
-          color="white"
-          fontSize={["1.5rem", "2rem", "2.5rem"]}
-          mb={["0rem", "0.5rem"]}
-        >
-          cohico
-        </Heading>
         <Text
           fontFamily={rubik}
           as="p"
           fontSize={["1rem", "1.25rem", "1.5rem"]}
-          color="black"
+          color="whiteAlpha.700"
           w={["100%", "80%"]}
           max-width="40rem"
           margin="auto"
           fontWeight="medium"
         >
+          Hi, my name is
+        </Text>
+        <Heading
+          fontFamily={nunito}
+          as="h1"
+          color="whiteAlpha.700"
+          fontSize={["1.5rem", "2rem", "3rem"]}
+          mb={["0rem", "0.5rem"]}
+        >
           <Highlight
+            query="muhammad"
+            styles={{
+              color: "white",
+            }}
+          >
+            zubeir muhammad arhesta.
+          </Highlight>
+        </Heading>
+        <Text
+          fontFamily={rubik}
+          as="p"
+          fontSize={["1rem", "1.25rem", "1.5rem"]}
+          color="whiteAlpha.700"
+          w={["100%", "80%"]}
+          max-width="40rem"
+          margin="auto"
+          fontWeight="medium"
+        >
+          {/* <Highlight
             query="code"
             styles={{
               fontFamily: "monospace",
@@ -82,12 +103,13 @@ export default function Hero() {
               rounded: "md",
               bg: "whiteAlpha.700",
               fontWeight: "bold",
+              marginRight: "2px",
             }}
-          >
-            code, hike, cook with me
-          </Highlight>
+          > */}
+          I love to code, hike, and cook.
+          {/* </Highlight> */}
         </Text>
-        <Text
+        {/* <Text
           fontFamily={nunito}
           mt={["7px", "10px"]}
           fontWeight="bold"
@@ -95,7 +117,7 @@ export default function Hero() {
           color="white"
         >
           developed by zubeir arhesta
-        </Text>
+        </Text> */}
       </Box>
     </Flex>
   );

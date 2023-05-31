@@ -1,8 +1,10 @@
 import {
   Button,
+  Divider,
   Flex,
   FormControl,
   Heading,
+  Highlight,
   Input,
   Text,
   useToast,
@@ -30,11 +32,31 @@ export default function Footer() {
   const [enteredEmail, setEnteredEmail] = useState("");
   const nunito = `'Nunito', sans-serif`;
   const icons = [
-    { name: faTwitter, link: "twitter" },
-    { name: faFacebook, link: "facebook" },
-    { name: faInstagram, link: "instagram" },
-    { name: faYoutube, link: "youtube" },
-    { name: faLinkedin, link: "linkedin" },
+    // { name: faTwitter, link: "twitter" },
+    {
+      name: faFacebook,
+      link: "facebook",
+      detail: "zmarhesta",
+      color: "#4267B2",
+    },
+    {
+      name: faInstagram,
+      link: "instagram",
+      detail: "zmarhesta",
+      color: "white",
+    },
+    {
+      name: faYoutube,
+      link: "youtube",
+      detail: "channel/UCGOW4u2-TAfe95pWUGDnb7A",
+      color: "#FF0000",
+    },
+    {
+      name: faLinkedin,
+      link: "linkedin",
+      detail: "in/zubeir-muhammad-arhesta-41b5b210b/",
+      color: "#0072b1",
+    },
   ];
 
   return (
@@ -53,21 +75,39 @@ export default function Footer() {
         justify="center"
         align="center"
         textAlign="center"
-        marginBottom="15px"
+        /* marginBottom="15px" */
         padding={["20px", "24px"]}
         color="#fff"
+        maxW={["90%", "90%", "70%"]}
       >
         <Heading
           marginBottom={["20px", "24px"]}
-          fontSize={["22px", "24px"]}
+          fontSize={["22px", "30px", "40px"]}
           fontFamily={["inherit"]}
+          textAlign={["left", "left", "center"]}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          A Brief Introduction
         </Heading>
-        <Text marginBottom={["18px", "24px"]} fontSize={["18px", "20px"]}>
-          You can unsubscribe at anytime.
+        <Text
+          /* marginBottom={["18px", "24px"]} */
+          textAlign={["left", "left", "center"]}
+          fontSize={["18px", "20px"]}
+          color="whiteAlpha.700"
+        >
+          <Highlight
+            query={["rayes", "coding", "hiking", "cooking"]}
+            styles={{
+              color: "white",
+              fontWeight: "extrabold",
+            }}
+          >
+            Hi, you can call me rayes, that&apos;s what people usually call me.
+            I love (or love watching) all about coding, hiking, and cooking. So
+            in this simple blog I made, I would like to share my stories about
+            it.
+          </Highlight>
         </Text>
-        <FormControl
+        {/* <FormControl
           as="form"
           onSubmit={(event) => {
             event.preventDefault();
@@ -121,7 +161,7 @@ export default function Footer() {
           >
             Subscribe
           </Button>
-        </FormControl>
+        </FormControl> */}
       </Flex>
       <FooterLinksContainer>
         <FooterLinksWrapper>
@@ -134,29 +174,27 @@ export default function Footer() {
             <FooterLink to="/feedback" content="Feedback" />
           </FooterLinkItems>
         </FooterLinksWrapper>
-        <FooterLinksWrapper>
-          <FooterLinkItems title="Service">
-            <FooterLink to="/mountain-travel" content="Mountain Travel" />
-            <FooterLink to="/dapur-abaty" content="Daput Abaty" />
-          </FooterLinkItems>
-          <FooterLinkItems title="Donation">
-            <FooterLink to="/to-be-named" content="to be named" />
-            <FooterLink to="/to-be-named" content="to be named" />
-          </FooterLinkItems>
-        </FooterLinksWrapper>
       </FooterLinksContainer>
       <SocialMediaContainer>
         <SocialMediaWrapper>
           <SocialLogo to="#" />
-          <Text fontSize="lg" color="#fff" marginBottom="16px">
-            cohico © 2023
-          </Text>
+
           <SocialIcons>
             {icons.map((icon) => (
-              <SocialIcon key={icon.link} to={icon.link} icon={icon.name} />
+              <SocialIcon
+                key={icon.link}
+                to={icon.link}
+                icon={icon.name}
+                detail={icon.detail}
+                color={icon.color}
+              />
             ))}
           </SocialIcons>
         </SocialMediaWrapper>
+        <Divider />
+        <Text fontSize="lg" color="#fff" marginY="16px">
+          © 2023 zubeir muhammad arhesta
+        </Text>
       </SocialMediaContainer>
     </Flex>
   );
