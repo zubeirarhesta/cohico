@@ -70,18 +70,11 @@ export default function Hero() {
         <Heading
           fontFamily={nunito}
           as="h1"
-          color="whiteAlpha.700"
+          color="white"
           fontSize={["1.5rem", "2rem", "3rem"]}
           mb={["0rem", "0.5rem"]}
         >
-          <Highlight
-            query="muhammad"
-            styles={{
-              color: "white",
-            }}
-          >
-            zubeir muhammad arhesta.
-          </Highlight>
+          zubeir muhammad arhesta.
         </Heading>
         <Text
           fontFamily={rubik}
@@ -106,7 +99,7 @@ export default function Hero() {
               marginRight: "2px",
             }}
           > */}
-          I love to code, hike, and cook.
+          let&apos;s code, hike, and cook with me!
           {/* </Highlight> */}
         </Text>
         {/* <Text
