@@ -34,7 +34,7 @@ export default function MainNavigation() {
       >
         <Heading
           ml={["5px", "10px"]}
-          fontSize={["1.7rem", "1.7rem", "2rem"]}
+          fontSize={["1.5rem", "1.7rem", "2rem"]}
           fontFamily={nunito}
           color="whiteAlpha.600"
           transition={animate}
