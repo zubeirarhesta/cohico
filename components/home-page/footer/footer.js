@@ -42,7 +42,7 @@ export default function Footer() {
     {
       name: faInstagram,
       link: "instagram",
-      detail: "zmarhesta",
+      detail: "zmarhesta?igshid=MzNlNGNkZWQ4Mg==",
       color: "white",
     },
     {
