@@ -63,6 +63,7 @@ export default function MainNavigation() {
         flexDirection="row"
         justifyContent="center"
         alignItems="center"
+        ml={["5px", "10px"]}
       >
         <Heading
           fontSize={["1.5rem", "1.7rem", "2rem"]}
