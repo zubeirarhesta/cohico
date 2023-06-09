@@ -9,7 +9,7 @@ export default function DummyPage({ children }) {
       justify="center"
       direction="column"
       height={["125vh", "100vh", "100vh"]}
-      bgGradient="linear(to-l, #30D5C8,  pink.500)"
+      bgGradient="linear(to-l, #30D5C8,  pink.400)"
       minW="22rem"
     >
       <Heading
