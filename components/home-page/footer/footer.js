@@ -107,7 +107,76 @@ export default function Footer() {
             it.
           </Highlight>
         </Text>
-        {/* <FormControl
+      </Flex>
+      <FooterLinksContainer>
+        <FooterLinksWrapper>
+          <FooterLinkItems title="About">
+            <FooterLink to="/motivation" content="Motivation" />
+            <FooterLink to="/what-is-next" content="What's next?" />
+          </FooterLinkItems>
+          <FooterLinkItems title="Contact">
+            <FooterLink to="/contact" content="Contact us" />
+            <FooterLink to="/feedback" content="Feedback" />
+          </FooterLinkItems>
+        </FooterLinksWrapper>
+      </FooterLinksContainer>
+      <Flex
+        as="section"
+        direction="column"
+        justify="center"
+        align="center"
+        textAlign="center"
+        /* marginBottom="15px" */
+        padding={["20px", "24px"]}
+        color="#fff"
+        maxW={["90%", "90%", "70%"]}
+      >
+        <Heading
+          marginBottom={["20px", "24px"]}
+          fontSize={["22px", "30px", "40px"]}
+          fontFamily={["inherit"]}
+          textAlign={["left", "left", "center"]}
+        >
+          Stacks Used
+        </Heading>
+        <SocialIcons>
+          {icons.map((icon) => (
+            <SocialIcon
+              key={icon.link}
+              to={icon.link}
+              icon={icon.name}
+              detail={icon.detail}
+              color={icon.color}
+            />
+          ))}
+        </SocialIcons>
+      </Flex>
+      <SocialMediaContainer>
+        <SocialMediaWrapper>
+          <SocialLogo to="#" />
+
+          <SocialIcons>
+            {icons.map((icon) => (
+              <SocialIcon
+                key={icon.link}
+                to={icon.link}
+                icon={icon.name}
+                detail={icon.detail}
+                color={icon.color}
+              />
+            ))}
+          </SocialIcons>
+        </SocialMediaWrapper>
+        <Divider />
+        <Text fontSize="lg" color="#fff" marginY="16px">
+          © 2023 zubeir muhammad arhesta
+        </Text>
+      </SocialMediaContainer>
+    </Flex>
+  );
+}
+
+/* <FormControl
           as="form"
           onSubmit={(event) => {
             event.preventDefault();
@@ -161,41 +230,4 @@ export default function Footer() {
           >
             Subscribe
           </Button>
-        </FormControl> */}
-      </Flex>
-      <FooterLinksContainer>
-        <FooterLinksWrapper>
-          <FooterLinkItems title="About">
-            <FooterLink to="/motivation" content="Motivation" />
-            <FooterLink to="/what-is-next" content="What's next?" />
-          </FooterLinkItems>
-          <FooterLinkItems title="Contact">
-            <FooterLink to="/contact" content="Contact us" />
-            <FooterLink to="/feedback" content="Feedback" />
-          </FooterLinkItems>
-        </FooterLinksWrapper>
-      </FooterLinksContainer>
-      <SocialMediaContainer>
-        <SocialMediaWrapper>
-          <SocialLogo to="#" />
-
-          <SocialIcons>
-            {icons.map((icon) => (
-              <SocialIcon
-                key={icon.link}
-                to={icon.link}
-                icon={icon.name}
-                detail={icon.detail}
-                color={icon.color}
-              />
-            ))}
-          </SocialIcons>
-        </SocialMediaWrapper>
-        <Divider />
-        <Text fontSize="lg" color="#fff" marginY="16px">
-          © 2023 zubeir muhammad arhesta
-        </Text>
-      </SocialMediaContainer>
-    </Flex>
-  );
-}
+        </FormControl> */
