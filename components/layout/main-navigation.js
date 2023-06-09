@@ -149,7 +149,13 @@ export default function MainNavigation() {
               }}
               onClick={isOpen ? onClose : onOpen}
             >
-              <Link href={`/${link.toLowerCase()}`}>{link}</Link>
+              <Link
+                href={
+                  link.includes("Ask") ? "/contact" : `/${link.toLowerCase()}`
+                }
+              >
+                {link}
+              </Link>
             </MenuItem>
           ))}
         </MenuList>

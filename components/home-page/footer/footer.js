@@ -77,7 +77,7 @@ export default function Footer() {
     {
       name: faJs,
       link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-      color: "#FFD600",
+      color: /* "#FFD600" */ "#ddb800",
     },
     {
       name: faReact,

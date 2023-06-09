@@ -10,10 +10,15 @@ export default function StackIcon(props) {
       <IconButton
         p="0"
         m="0"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
         height={["50px", "60px"]}
         width={["50px", "60px"]}
         fontSize={["2rem"]}
         variant="unstyled"
+        boxShadow="1px 1px 10px #9c9c9c"
+        bg="blackAlpha.200"
         color={props.color}
         transition="all 0.3s ease-in-out"
         _hover={{
