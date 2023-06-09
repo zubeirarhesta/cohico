@@ -33,8 +33,8 @@ import StackIcon from "./stack-icon";
 import StackIcons from "./stack-icons";
 
 export default function Footer() {
-  const toast = useToast();
-  const [enteredEmail, setEnteredEmail] = useState("");
+  /* const toast = useToast();
+  const [enteredEmail, setEnteredEmail] = useState(""); */
   const nunito = `'Nunito', sans-serif`;
   const icons = [
     {
@@ -64,7 +64,6 @@ export default function Footer() {
   ];
 
   const stackIcons = [
-    // { name: faTwitter, link: "twitter" },
     /* {
       name: faHtml5,
       link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
@@ -213,7 +212,7 @@ export default function Footer() {
         </SocialMediaWrapper>
         <Divider />
         <Text fontSize="lg" color="#fff" marginY="16px">
-          © 2023 zubeir muhammad arhesta
+          © 2023 zubeir arhesta
         </Text>
       </SocialMediaContainer>
     </Flex>

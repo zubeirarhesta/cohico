@@ -19,6 +19,9 @@ const nunito = `'Nunito', sans-serif`;
 const Links = ["Posts", "Ask Me", "Games"];
 
 function NavLink({ children }) {
+  const link = children.includes("Ask")
+    ? "/contact"
+    : `/${children.toLowerCase()}`;
   return (
     <Box
       ml={["2px", "5px"]}
@@ -35,7 +38,7 @@ function NavLink({ children }) {
         color: "white",
       }}
     >
-      <Link href={`/${children.toLowerCase()}`}>{children}</Link>
+      <Link href={link}>{children}</Link>
     </Box>
   );
 }
