@@ -36,7 +36,6 @@ export default function Hero() {
           alt="zubeir muhammad arhetsa"
           width={1000}
           height={1000}
-          quality={100}
           unoptimized={true}
           style={{
             objectFit: "cover",
