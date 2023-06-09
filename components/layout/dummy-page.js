@@ -1,7 +1,8 @@
-import { Flex, Heading } from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 
 export default function DummyPage({ children }) {
   const nunito = `'Nunito', sans-serif`;
+  const title = children.toUpperCase();
   return (
     <Flex
       align="center"
@@ -18,8 +19,17 @@ export default function DummyPage({ children }) {
         color="white"
         fontFamily={nunito}
       >
-        {children}
+        {title}
       </Heading>
+      <Text
+        fontSize={["1.5xl", "2xl", "4xl"]}
+        fontWeight="extrabold"
+        fontStyle="italic"
+        color="white"
+        fontFamily={nunito}
+      >
+        Under Development
+      </Text>
     </Flex>
   );
 }

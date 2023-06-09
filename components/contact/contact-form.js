@@ -5,7 +5,9 @@ import {
   FormHelperText,
   FormLabel,
   Heading,
+  Highlight,
   Input,
+  Switch,
   Textarea,
   useDisclosure,
 } from "@chakra-ui/react";
@@ -59,6 +61,12 @@ export default function ContactForm() {
     fontWeight: "bold",
     margin: "0.5rem 0 0.25rem 0",
   };
+
+  const [isSundanese, setIsSundanese] = useState(false);
+
+  function setSundanese() {
+    setIsSundanese(!isSundanese);
+  }
 
   useEffect(() => {
     if (requestStatus === "success" || requestStatus === "error") {
@@ -125,11 +133,22 @@ export default function ContactForm() {
 
   return (
     <Fragment>
+      <FormControl
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        mt={["1rem", "2rem"]}
+      >
+        <FormLabel htmlFor="email-alerts" mb="0">
+          {isSundanese ? "English" : "Sundasese"}
+        </FormLabel>
+        <Switch id="email-alerts" onChange={setSundanese} />
+      </FormControl>
       <Box
         as="section"
-        margin={["1rem auto", "2rem auto"]}
+        margin={["0.5rem auto", "1rem auto"]}
         borderRadius="6px"
-        backgroundColor="gray.100"
+        backgroundColor={isSundanese ? "gray.100" : "green.100"}
         width="90%"
         maxWidth="50rem"
         padding="1rem"
@@ -137,12 +156,12 @@ export default function ContactForm() {
         fontSize={["1rem", "1.2rem"]}
       >
         <Heading
-          fontSize={["2rem", "2.5rem", "3rem"]}
+          fontSize={["2rem", "2.3rem", "2.5rem"]}
           margin="1rem 0"
           textAlign={["left", "center"]}
           fontFamily={nunito}
         >
-          Ask me?
+          {isSundanese ? "Ask me anything ..." : "Bade naros? buleeeh ..."}
         </Heading>
         <FormControl
           as="form"
@@ -152,7 +171,7 @@ export default function ContactForm() {
           <Box display="flex" columnGap="1rem" flexWrap="wrap">
             <Box flex="1" minWidth="10rem">
               <FormLabel htmlFor="email" sx={labelStyle}>
-                Your Email
+                {isSundanese ? "Your Email" : "Email-na"}
               </FormLabel>
               <Input
                 as="input"
@@ -164,12 +183,14 @@ export default function ContactForm() {
                 sx={inputStyle}
               />
               <FormHelperText>
-                Please use your less important email.
+                {isSundanese
+                  ? "Please use your less important, yet valid email."
+                  : "Email nu teu pati penting, tetapi valid meh tiasa diwaler ku abi."}
               </FormHelperText>
             </Box>
             <Box flex="1" minWidth="10rem">
               <FormLabel htmlFor="name" sx={labelStyle}>
-                Your Name
+                {isSundanese ? "Your Name" : "Nami-na"}
               </FormLabel>
               <Input
                 as="input"
@@ -184,7 +205,7 @@ export default function ContactForm() {
           </Box>
           <Box flex="1" minWidth="10rem">
             <FormLabel htmlFor="message" sx={labelStyle}>
-              Your Message
+              {isSundanese ? "Your Question" : "Sok narosna di dieu..."}
             </FormLabel>
             <Textarea
               id="message"
@@ -197,7 +218,7 @@ export default function ContactForm() {
           </Box>
           <Box marginTop="1rem" textAlign="right" onClick={onOpen}>
             <Button as="button" type="submit">
-              Submit
+              {isSundanese ? "Submit" : "Submitkeun"}
             </Button>
           </Box>
         </FormControl>
