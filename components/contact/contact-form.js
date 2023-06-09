@@ -63,6 +63,13 @@ export default function ContactForm() {
 
   const [isSundanese, setIsSundanese] = useState(false);
 
+  const sundaneseTitle = (
+    <Fragment>
+      <p>Bade naros? </p>
+      <p>buleeeh ...</p>
+    </Fragment>
+  );
+
   function setSundanese() {
     setIsSundanese(!isSundanese);
   }
@@ -160,10 +167,7 @@ export default function ContactForm() {
           textAlign={["left", "center"]}
           fontFamily={nunito}
         >
-          {!isSundanese
-            ? "Ask me anything ..."
-            : `Bade naros? 
-            buleeeh ...`}
+          {!isSundanese ? "Ask me anything ..." : sundaneseTitle}
         </Heading>
         <FormControl
           as="form"
