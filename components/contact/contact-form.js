@@ -5,7 +5,6 @@ import {
   FormHelperText,
   FormLabel,
   Heading,
-  Highlight,
   Input,
   Switch,
   Textarea,
@@ -140,7 +139,7 @@ export default function ContactForm() {
         mt={["1rem", "2rem"]}
       >
         <FormLabel htmlFor="email-alerts" mb="0">
-          {isSundanese ? "English" : "Sundasese"}
+          {!isSundanese ? "English" : "Sundasese"}
         </FormLabel>
         <Switch id="email-alerts" onChange={setSundanese} />
       </FormControl>
@@ -148,7 +147,7 @@ export default function ContactForm() {
         as="section"
         margin={["0.5rem auto", "1rem auto"]}
         borderRadius="6px"
-        backgroundColor={isSundanese ? "gray.100" : "green.100"}
+        backgroundColor={!isSundanese ? "gray.100" : "green.100"}
         width="90%"
         maxWidth="50rem"
         padding="1rem"
@@ -161,7 +160,10 @@ export default function ContactForm() {
           textAlign={["left", "center"]}
           fontFamily={nunito}
         >
-          {isSundanese ? "Ask me anything ..." : "Bade naros? buleeeh ..."}
+          {!isSundanese
+            ? "Ask me anything ..."
+            : `Bade naros? 
+            buleeeh ...`}
         </Heading>
         <FormControl
           as="form"
@@ -171,7 +173,7 @@ export default function ContactForm() {
           <Box display="flex" columnGap="1rem" flexWrap="wrap">
             <Box flex="1" minWidth="10rem">
               <FormLabel htmlFor="email" sx={labelStyle}>
-                {isSundanese ? "Your Email" : "Email-na"}
+                {!isSundanese ? "Your Email" : "Email-na"}
               </FormLabel>
               <Input
                 as="input"
@@ -183,14 +185,14 @@ export default function ContactForm() {
                 sx={inputStyle}
               />
               <FormHelperText>
-                {isSundanese
+                {!isSundanese
                   ? "Please use your less important, yet valid email."
                   : "Email nu teu pati penting, tetapi valid meh tiasa diwaler ku abi."}
               </FormHelperText>
             </Box>
             <Box flex="1" minWidth="10rem">
               <FormLabel htmlFor="name" sx={labelStyle}>
-                {isSundanese ? "Your Name" : "Nami-na"}
+                {!isSundanese ? "Your Name" : "Nami-na"}
               </FormLabel>
               <Input
                 as="input"
@@ -205,7 +207,7 @@ export default function ContactForm() {
           </Box>
           <Box flex="1" minWidth="10rem">
             <FormLabel htmlFor="message" sx={labelStyle}>
-              {isSundanese ? "Your Question" : "Sok narosna di dieu..."}
+              {!isSundanese ? "Your Question" : "Sok narosna di dieu..."}
             </FormLabel>
             <Textarea
               id="message"
@@ -218,7 +220,7 @@ export default function ContactForm() {
           </Box>
           <Box marginTop="1rem" textAlign="right" onClick={onOpen}>
             <Button as="button" type="submit">
-              {isSundanese ? "Submit" : "Submitkeun"}
+              {!isSundanese ? "Submit" : "Submitkeun"}
             </Button>
           </Box>
         </FormControl>
