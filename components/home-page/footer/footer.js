@@ -1,11 +1,8 @@
 import {
-  Button,
   Divider,
   Flex,
-  FormControl,
   Heading,
   Highlight,
-  Input,
   Text,
   useToast,
 } from "@chakra-ui/react";
@@ -19,20 +16,27 @@ import SocialLogo from "./social-logo";
 import SocialIcons from "./social-icons";
 import SocialIcon from "./social-icon";
 import {
-  faTwitter,
   faFacebook,
   faYoutube,
   faInstagram,
   faLinkedin,
+  faHtml5,
+  faCss3,
+  faJs,
+  faReact,
 } from "@fortawesome/free-brands-svg-icons";
+import mongoIcon from "../../../public/mongodb.ico";
+import nextIcon from "../../../public/next-js.svg";
+import chakraIcon from "../../../public/chakraui-custom.svg";
 import { useState } from "react";
+import StackIcon from "./stack-icon";
+import StackIcons from "./stack-icons";
 
 export default function Footer() {
   const toast = useToast();
   const [enteredEmail, setEnteredEmail] = useState("");
   const nunito = `'Nunito', sans-serif`;
   const icons = [
-    // { name: faTwitter, link: "twitter" },
     {
       name: faFacebook,
       link: "facebook",
@@ -56,6 +60,45 @@ export default function Footer() {
       link: "linkedin",
       detail: "in/zubeir-muhammad-arhesta-41b5b210b/",
       color: "#0072b1",
+    },
+  ];
+
+  const stackIcons = [
+    // { name: faTwitter, link: "twitter" },
+    /* {
+      name: faHtml5,
+      link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      color: "#e34f26",
+    },
+    {
+      name: faCss3,
+      link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      color: "#1680C0",
+    }, */
+    {
+      name: faJs,
+      link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      color: "#FFD600",
+    },
+    {
+      name: faReact,
+      link: "https://react.dev",
+      color: "#61dbfb",
+    },
+    {
+      name: chakraIcon,
+      link: "https://chakra-ui.com",
+      color: "#61dbfb",
+    },
+    {
+      name: nextIcon,
+      link: "https://nextjs.org",
+      color: "#61dbfb",
+    },
+    {
+      name: mongoIcon,
+      link: "https://www.mongodb.com",
+      color: "#61dbfb",
     },
   ];
 
@@ -126,30 +169,31 @@ export default function Footer() {
         justify="center"
         align="center"
         textAlign="center"
-        /* marginBottom="15px" */
         padding={["20px", "24px"]}
-        color="#fff"
-        maxW={["90%", "90%", "70%"]}
+        color="#242424"
+        py={["0.5rem", "2rem"]}
+        /* maxW={["90%", "90%", "70%"]} */
+        w="100%"
+        bg="gray.100"
       >
         <Heading
-          marginBottom={["20px", "24px"]}
+          marginBottom={["15px", "20px", "24px"]}
           fontSize={["22px", "30px", "40px"]}
           fontFamily={["inherit"]}
           textAlign={["left", "left", "center"]}
         >
           Stacks Used
         </Heading>
-        <SocialIcons>
-          {icons.map((icon) => (
-            <SocialIcon
+        <StackIcons>
+          {stackIcons.map((icon) => (
+            <StackIcon
               key={icon.link}
               to={icon.link}
               icon={icon.name}
-              detail={icon.detail}
               color={icon.color}
             />
           ))}
-        </SocialIcons>
+        </StackIcons>
       </Flex>
       <SocialMediaContainer>
         <SocialMediaWrapper>

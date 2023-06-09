@@ -3,11 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function SocialIcon(props) {
   return (
-    <Link
-      href={`https://www.${props.to}.com/${props.detail}`}
-      transition="all 0.3s ease-in-out"
-      fontSize="24px"
-    >
+    <Link href={`https://www.${props.to}.com/${props.detail}`}>
       <IconButton
         p="0"
         m="0"

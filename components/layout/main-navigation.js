@@ -16,7 +16,7 @@ import Link from "next/link";
 
 const animate = "all 0.3s ease-in-out";
 const nunito = `'Nunito', sans-serif`;
-const Links = ["Posts", "Contact / Ask Me", "Login"];
+const Links = ["Posts", "Ask Me", "Games"];
 
 function NavLink({ children }) {
   return (
