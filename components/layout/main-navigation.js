@@ -50,11 +50,11 @@ export default function MainNavigation() {
     <Flex
       as="header"
       position="fixed"
-      maxH="70px"
+      maxH="80px"
       minW="22rem"
       width="100%"
       px="0.5rem"
-      py="0.3rem"
+      py="0.5rem"
       top={0}
       align="center"
       bg="blackAlpha.900"
@@ -69,7 +69,7 @@ export default function MainNavigation() {
         ml={["5px", "10px"]}
       >
         <Heading
-          fontSize={["1.2rem", "1.4rem", "1.7rem"]}
+          fontSize={["1.3rem", "1.5rem", "1.8rem"]}
           fontFamily={nunito}
           color="whiteAlpha.600"
           transition={animate}
