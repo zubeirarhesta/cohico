@@ -137,16 +137,25 @@ export default function Footer() {
           color="whiteAlpha.700"
         >
           <Highlight
-            query={["rayes", "coding", "hiking", "cooking"]}
+            query={[
+              "rayes",
+              "coding",
+              "hiking",
+              "cooking",
+              "nextjs",
+              "react",
+              "chakra UI",
+              "mongoDB",
+            ]}
             styles={{
               color: "white",
               fontWeight: "extrabold",
             }}
           >
-            Hi, you can call me rayes, that&apos;s what people usually call me.
-            This is my personal website. The stacks I used to build it are
-            nextjs, react, chakra UI, and mongoDB. I love (or love watching) all
-            about coding, hiking, and cooking.
+            Hi, you can call me rayes, This is my personal website. The stacks I
+            used to build this website are nextjs, react, chakra UI, and
+            mongoDB. I love (or love watching) all about coding, hiking, and
+            cooking.
           </Highlight>
         </Text>
       </Flex>

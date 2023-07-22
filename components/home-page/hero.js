@@ -8,7 +8,7 @@ export default function Hero() {
     <Flex
       as="section"
       textAlign={["left", "center"]}
-      bgImage="url('/images/site/silhouette.jpeg')"
+      bgImage="url('/images/site/gedepeak.jpeg')"
       bgPosition="center"
       bgRepeat="no-repeat"
       bgSize="cover"
@@ -32,7 +32,7 @@ export default function Hero() {
         mt="2rem"
       >
         <Image
-          src="/images/site/arhesta.jpeg"
+          src="/images/site/zmarhesta.jpeg"
           alt="zubeir muhammad arhetsa"
           width={1000}
           height={1000}
