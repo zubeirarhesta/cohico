@@ -144,9 +144,9 @@ export default function Footer() {
             }}
           >
             Hi, you can call me rayes, that&apos;s what people usually call me.
-            I love (or love watching) all about coding, hiking, and cooking. So
-            in this simple blog I made, I would like to share my stories about
-            it.
+            This is my personal website. The stacks I used to build it are
+            nextjs, react, chakra UI, and mongoDB. I love (or love watching) all
+            about coding, hiking, and cooking.
           </Highlight>
         </Text>
       </Flex>

@@ -8,7 +8,7 @@ export default function Hero() {
     <Flex
       as="section"
       textAlign={["left", "center"]}
-      bgImage="url('/images/site/gunung.jpg')"
+      bgImage="url('/images/site/silhouette.jpeg')"
       bgPosition="center"
       bgRepeat="no-repeat"
       bgSize="cover"
@@ -32,7 +32,7 @@ export default function Hero() {
         mt="2rem"
       >
         <Image
-          src="/images/site/zubeir.jpeg"
+          src="/images/site/arhesta.jpeg"
           alt="zubeir muhammad arhetsa"
           width={1000}
           height={1000}
@@ -106,7 +106,7 @@ export default function Hero() {
               marginRight: "2px",
             }}
           > */}
-          let&apos;s code, hike, and cook with me!
+          I am a Software Engineer!
           {/* </Highlight> */}
         </Text>
         {/* <Text
