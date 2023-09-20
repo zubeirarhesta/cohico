@@ -319,10 +319,11 @@
 
   #title_skewed_right {
     position: absolute;
-    background: rgba(110, 185, 45, 0.7);
+    background: rgba(150, 150, 150, 0.7);
     padding: 0px 10px 5px 10px;
     border-bottom-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0px;
     top: 0;
     margin-left: 0;
     text-align: center;
@@ -331,10 +332,11 @@
 
   #title_skewed_left {
     position: absolute;
-    background: rgba(110, 185, 45, 0.7);
+    background: rgba(150, 150, 150, 0.7);
     padding: 0px 10px 5px 10px;
+    border-top-right-radius: 0px;
     border-bottom-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     top: 0;
     margin-left: -45px;
     text-align: center;
@@ -365,22 +367,29 @@
 
   #title_skewed_right h3,
   #title_skewed_left h3 {
-    color: rgb(40, 70, 20);
+    color: rgb(199, 199, 199);
+    font-size: 0.8rem;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .aktivitas_skewed_grid:hover > #title_skewed_right h3,
+  .aktivitas_skewed_grid:hover > #title_skewed_left h3 {
     font-size: 1rem;
+    color: rgb(255, 255, 255);
   }
 
   .aktivitas_skewed_grid:hover > #title_skewed_right {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background: rgba(110, 185, 45);
+    background: rgb(61, 61, 61);
     transition: all ease-in-out 0.3s;
   }
 
   .aktivitas_skewed_grid:hover > #title_skewed_left {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    margin-left: 10px;
-    background: rgba(110, 185, 45);
+    margin-left: 5px;
+    background: rgb(61, 61, 61);
     transition: all ease-in-out 0.3s;
   }
 

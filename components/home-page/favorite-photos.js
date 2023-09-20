@@ -15,7 +15,7 @@ export default function FavoritePhotos() {
           />
         </div>
         <div id={styles.title_skewed_right}>
-          <h3>KBM</h3>
+          <h3>puncak gunung gede, 2022</h3>
         </div>
         <div id={styles.narrative_skewed_right}>
           <p>
@@ -34,7 +34,7 @@ export default function FavoritePhotos() {
           </p>
         </div>
         <div id={styles.title_skewed_left}>
-          <h3>Halaqah</h3>
+          <h3>sukaluyu, cianjur, 2023</h3>
         </div>
         <div id={styles.image_skewed_wrapper}>
           <Image
@@ -57,7 +57,7 @@ export default function FavoritePhotos() {
           />
         </div>
         <div id={styles.title_skewed_right}>
-          <h3>Muhadharah</h3>
+          <h3>rawalumbu, bekasi, 2020</h3>
         </div>
         <div id={styles.narrative_skewed_right}>
           <p>
@@ -76,7 +76,7 @@ export default function FavoritePhotos() {
           </p>
         </div>
         <div id={styles.title_skewed_left}>
-          <h3>Keasramaan</h3>
+          <h3>kedungkandang, malang, 2021</h3>
         </div>
         <div id={styles.image_skewed_wrapper}>
           <Image
@@ -99,7 +99,7 @@ export default function FavoritePhotos() {
           />
         </div>
         <div id={styles.title_skewed_right}>
-          <h3>Ekstrakulikuler</h3>
+          <h3>pantai balekambang, malang, 2022</h3>
         </div>
         <div id={styles.narrative_skewed_right}>
           <p>
