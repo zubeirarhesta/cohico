@@ -59,7 +59,7 @@ export default function MainNavigation() {
       align="center"
       bg="blackAlpha.900"
       backdropFilter="saturate(180%) blur(5px)"
-      zIndex="1"
+      zIndex="99"
     >
       <Box
         display="flex"

@@ -1,0 +1,195 @@
+.aktivitas_container {
+  padding: 0 100px;
+}
+
+/* SKEW animation */
+
+.aktivitas_skewed_grid {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin: 20px 0;
+  position: relative;
+}
+
+.right_skewed {
+  align-items: start;
+  justify-content: flex-end;
+  margin-right: 3rem;
+}
+
+.aktivitas_skewed_item {
+  background-color: white;
+  text-align: center;
+  transition: all ease-in-out 0.3s;
+}
+
+#image_skewed_wrapper {
+  -webkit-backface-visibility: hidden; /* the magic ingredient */
+  -webkit-transform: skew(16deg, 0);
+  overflow: hidden;
+  width: 400px;
+  height: auto;
+  position: relative;
+  left: 20px;
+  transition: all ease-in-out 0.3s;
+}
+
+#image_skewed {
+  width: 500px;
+  min-width: 500px;
+  height: auto;
+  object-fit: cover;
+  -webkit-transform: skew(-16deg, 0);
+  position: relative;
+  left: -50px;
+  transition: all ease-in-out 0.3s;
+}
+
+#title_skewed_right {
+  background: rgba(110, 185, 45);
+  z-index: 50;
+  padding: 5px 10px 5px 10px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-left: 30px;
+  text-align: center;
+  transition: all ease-in-out 0.3s;
+}
+
+#title_skewed_left {
+  background-color: rgba(110, 185, 45);
+  z-index: 50;
+  padding: 5px 10px 5px 10px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-right: -75px;
+  text-align: center;
+  transition: all ease-in-out 0.3s;
+}
+
+#title_skewed_right h3,
+#title_skewed_left h3 {
+  color: rgb(40, 70, 20);
+  font-size: 2rem;
+}
+
+#narrative_skewed_right {
+  align-self: center;
+  color: rgba(255, 255, 255, 0);
+  transition: all ease-in-out 0.3s;
+  max-width: 400px;
+  height: auto;
+  right: 50px;
+  position: absolute;
+}
+
+#narrative_skewed_left {
+  align-self: center;
+  color: rgba(255, 255, 255, 0);
+  transition: all ease-in-out 0.3s;
+  max-width: 400px;
+  height: auto;
+  left: 50px;
+  position: absolute;
+}
+
+#narrative_skewed_right p,
+#narrative_skewed_left p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.aktivitas_skewed_grid:hover > #image_skewed_wrapper,
+.aktivitas_skewed_grid:hover > #image_skewed_wrapper > #image_skewed {
+  -webkit-transform: skew(0);
+  transition: all ease-in-out 0.3s;
+  width: 500px;
+  left: 0;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.right_skewed:hover > #image_skewed_wrapper,
+.right_skewed:hover > #image_skewed_wrapper > #image_skewed {
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0px;
+}
+
+.aktivitas_skewed_grid:hover > #title_skewed_right {
+  border-radius: 0;
+  margin-left: 0;
+  background: linear-gradient(to right, rgba(110, 185, 45), white);
+  transition: all ease-in-out 0.3s;
+}
+
+.aktivitas_skewed_grid:hover > #title_skewed_left {
+  border-radius: 0;
+  margin-right: 0;
+  background: linear-gradient(to left, rgba(110, 185, 45), white);
+  transition: all ease-in-out 0.3s;
+}
+
+.aktivitas_skewed_grid:hover > #narrative_skewed_right,
+.aktivitas_skewed_grid:hover > #narrative_skewed_left {
+  color: black;
+  transition: all ease-in-out 0.3s;
+}
+@media (max-width: 400px) {
+  .aktivitas_container {
+    padding: 0 10px;
+  }
+
+  .aktivitas_skewed_grid {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 20px 0;
+    position: relative;
+  }
+
+  #image_skewed_wrapper {
+    -webkit-backface-visibility: hidden; /* the magic ingredient */
+    -webkit-transform: skew(16deg, 0);
+    overflow: hidden;
+    width: 250px;
+    height: auto;
+    position: relative;
+    left: 40px;
+    transition: all ease-in-out 0.3s;
+  }
+
+  #image_skewed {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    -webkit-transform: skew(-16deg, 0);
+    position: relative;
+    left: -40px;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .aktivitas_skewed_grid:hover > #image_skewed_wrapper,
+  .aktivitas_skewed_grid:hover > #image_skewed_wrapper > #image_skewed {
+    -webkit-transform: skew(0);
+    transition: all ease-in-out 0.3s;
+    width: 300px;
+    left: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .right_skewed:hover > #image_skewed_wrapper,
+  .right_skewed:hover > #image_skewed_wrapper > #image_skewed {
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+  }
+
+  #title_skewed_right h3,
+  #title_skewed_left h3 {
+    color: rgb(40, 70, 20);
+    font-size: 1rem;
+  }
+}

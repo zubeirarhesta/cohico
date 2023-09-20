@@ -4,6 +4,8 @@ import { Fragment } from "react";
 import Head from "next/head";
 import { getFeaturedPosts } from "@/lib/posts-util";
 import Footer from "@/components/home-page/footer/footer";
+import FeaturedPhotos from "@/components/home-page/featured-photos";
+import FavoritePhotos from "@/components/home-page/favorite-photos";
 
 export default function HomePage(props) {
   const { posts } = props;
@@ -15,7 +17,8 @@ export default function HomePage(props) {
         <meta name="description" content="code, hike, cook with me" />
       </Head>
       <Hero />
-      <FeaturedPosts items={posts} />
+      {/* <FeaturedPosts items={posts} /> */}
+      <FavoritePhotos />
       <Footer />
     </Fragment>
   );

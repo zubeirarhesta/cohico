@@ -133,7 +133,7 @@ export default function Footer() {
         <Text
           /* marginBottom={["18px", "24px"]} */
           textAlign={["left", "left", "center"]}
-          fontSize={["18px", "20px"]}
+          fontSize={["13px", "18px", "20px"]}
           color="whiteAlpha.700"
         >
           <Highlight
