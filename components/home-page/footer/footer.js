@@ -104,7 +104,7 @@ export default function Footer() {
   return (
     <Flex
       backgroundColor="#242424"
-      padding={["2rem 0 0 0", "2.2rem 0 0 0", "2.5rem 0 0 0"]}
+      padding={["2.2rem 0 0 0", "2.3rem 0 0 0", "2.5rem 0 0 0"]}
       direction="column"
       justify="center"
       align="center"
