@@ -388,7 +388,7 @@
     width: 280px;
     max-width: 283px;
     height: auto;
-    left: 25px;
+    left: 40px;
     position: absolute;
     padding: 10px 30px 10px;
   }
@@ -419,5 +419,18 @@
     z-index: 100;
     bottom: 0;
     padding-top: 5px;
+  }
+}
+
+@media (max-width: 350px) {
+  #narrative_skewed_right,
+  #narrative_skewed_left {
+    transition: background all ease-in-out 0.3s;
+    width: 280px;
+    max-width: 283px;
+    height: auto;
+    left: 25px;
+    position: absolute;
+    padding: 10px 30px 10px;
   }
 }
