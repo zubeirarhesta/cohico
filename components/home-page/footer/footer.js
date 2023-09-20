@@ -118,7 +118,7 @@ export default function Footer() {
         align="center"
         textAlign="center"
         /* marginBottom="15px" */
-        padding={["20px", "24px"]}
+        padding={["10px 15px 15px", "20px", "24px"]}
         color="#fff"
         maxW={["90%", "90%", "70%"]}
       >
