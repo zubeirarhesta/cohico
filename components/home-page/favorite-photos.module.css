@@ -234,7 +234,7 @@
 
   #narrative_skewed_right,
   #narrative_skewed_left {
-    transition: background all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
     width: 380px;
     max-width: 400px;
     height: auto;
@@ -385,7 +385,7 @@
 
   #narrative_skewed_right,
   #narrative_skewed_left {
-    transition: background all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
     width: 280px;
     max-width: 283px;
     height: auto;
@@ -427,7 +427,7 @@
 @media (max-width: 350px) {
   #narrative_skewed_right,
   #narrative_skewed_left {
-    transition: background all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
     width: 280px;
     max-width: 283px;
     height: auto;
