@@ -241,6 +241,7 @@
     left: 45px;
     position: absolute;
     padding: 10px 30px 10px;
+    z-index: 1;
   }
 
   #narrative_skewed_right p,
@@ -391,6 +392,7 @@
     left: 40px;
     position: absolute;
     padding: 10px 30px 10px;
+    z-index: 1;
   }
 
   #narrative_skewed_right p,
@@ -432,5 +434,6 @@
     left: 25px;
     position: absolute;
     padding: 10px 30px 10px;
+    z-index: 1;
   }
 }
