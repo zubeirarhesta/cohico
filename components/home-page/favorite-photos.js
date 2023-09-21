@@ -78,11 +78,11 @@ export default function FavoritePhotos() {
           </p>
         </div>
         <div id={styles.title_skewed_left}>
-          <h3>kedungkandang, malang, 2021</h3>
+          <h3>cikalongkulon, cianjur, 2022</h3>
         </div>
         <div id={styles.image_skewed_wrapper}>
           <Image
-            src="/images/site/gedepeak.jpeg"
+            src="/images/site/sunset-in-cikalongkulon.jpeg"
             alt="Image 1"
             id={styles.image_skewed}
             width={1000}
