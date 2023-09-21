@@ -299,7 +299,9 @@
 
   #image_skewed_wrapper {
     -webkit-backface-visibility: hidden;
-
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 20px;
     overflow: hidden;
 
     width: 300px;
@@ -419,6 +421,7 @@
   .aktivitas_skewed_grid:hover > #narrative_skewed_right,
   .aktivitas_skewed_grid:hover > #narrative_skewed_left {
     color: black;
+    /* background: none; */
     background: linear-gradient(
       to right,
       rgba(255, 255, 255, 0),
