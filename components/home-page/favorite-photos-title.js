@@ -7,7 +7,7 @@ export default function FavoritePhotosTitle() {
       <Flex
         justifyContent="center"
         alignItems="center"
-        padding="10px 20px"
+        padding={["10px 20px 5px", "10px 20px", "10px 20px"]}
         margin={["10px auto 0px", "10px auto 0px", "10px auto 40px"]}
       >
         <Heading size={["lg", "xl", "2xl"]}>my featured shots</Heading>
