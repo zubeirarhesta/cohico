@@ -106,7 +106,7 @@ export default function Hero() {
               marginRight: "2px",
             }}
           > */}
-          I am a Software Engineer!
+          I am a Software Engineer <br />I love photography and hiking
           {/* </Highlight> */}
         </Text>
         {/* <Text

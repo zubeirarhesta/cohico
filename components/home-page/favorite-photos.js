@@ -1,9 +1,11 @@
 import styles from "@/components/home-page/favorite-photos.module.css";
 import Image from "next/image";
+import FavoritePhotosTitle from "./favorite-photos-title";
 
 export default function FavoritePhotos() {
   return (
     <div className={styles.aktivitas_container}>
+      <FavoritePhotosTitle />
       <div className={styles.aktivitas_skewed_grid}>
         <div id={styles.image_skewed_wrapper}>
           <Image
