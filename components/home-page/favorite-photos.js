@@ -34,11 +34,11 @@ export default function FavoritePhotos() {
           </p>
         </div>
         <div id={styles.title_skewed_left}>
-          <h3>sukaluyu, cianjur, 2023</h3>
+          <h3>karangtengah, cianjur, 2021</h3>
         </div>
         <div id={styles.image_skewed_wrapper}>
           <Image
-            src="/images/site/gedepeak.jpeg"
+            src="/images/site/sunset-in-karangtengah.jpeg"
             alt="Image 1"
             id={styles.image_skewed}
             width={2000}
@@ -49,7 +49,7 @@ export default function FavoritePhotos() {
       <div className={styles.aktivitas_skewed_grid}>
         <div id={styles.image_skewed_wrapper}>
           <Image
-            src="/images/site/gedepeak.jpeg"
+            src="/images/site/sunset-in-sabana-suryakencana.jpeg"
             alt="Image 1"
             id={styles.image_skewed}
             width={1000}
@@ -57,7 +57,7 @@ export default function FavoritePhotos() {
           />
         </div>
         <div id={styles.title_skewed_right}>
-          <h3>rawalumbu, bekasi, 2020</h3>
+          <h3>suryakencana, tnggp, 2022</h3>
         </div>
         <div id={styles.narrative_skewed_right}>
           <p>
