@@ -325,7 +325,7 @@
     padding: 0px 10px 5px 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
     top: 0;
     margin-left: 0;
     text-align: center;
@@ -336,7 +336,7 @@
     position: absolute;
     background: rgba(150, 150, 150, 0.7);
     padding: 0px 10px 5px 10px;
-    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     top: 0;
@@ -369,21 +369,21 @@
 
   #title_skewed_right h3,
   #title_skewed_left h3 {
-    color: rgb(199, 199, 199);
+    color: rgb(85, 85, 85);
     font-size: 0.8rem;
     transition: all ease-in-out 0.3s;
   }
 
   .aktivitas_skewed_grid:hover > #title_skewed_right h3,
   .aktivitas_skewed_grid:hover > #title_skewed_left h3 {
-    font-size: 1rem;
-    color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+    color: rgb(0, 0, 0);
   }
 
   .aktivitas_skewed_grid:hover > #title_skewed_right {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background: rgb(61, 61, 61);
+    background: rgb(201, 201, 201);
     transition: all ease-in-out 0.3s;
   }
 
@@ -391,7 +391,7 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     margin-left: 5px;
-    background: rgb(61, 61, 61);
+    background: rgb(201, 201, 201);
     transition: all ease-in-out 0.3s;
   }
 
