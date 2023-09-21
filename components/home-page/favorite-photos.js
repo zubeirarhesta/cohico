@@ -21,9 +21,9 @@ export default function FavoritePhotos() {
         </div>
         <div id={styles.narrative_skewed_right}>
           <p>
-            taken by: me <br />
-            location: peak of gede (2958 mdpl) <br />
-            in frame: me and my students
+            shot at &nbsp;&nbsp;: July 05th, 2022 <br />
+            location : peak of gede (2958 mdpl) <br />
+            in frame : me and my students
           </p>
         </div>
       </div>
