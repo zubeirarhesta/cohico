@@ -21,9 +21,9 @@ export default function FavoritePhotos() {
         </div>
         <div id={styles.narrative_skewed_right}>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry.
+            taken by: me <br />
+            location: peak of gede (2958 mdpl) <br />
+            in frame: me and my students
           </p>
         </div>
       </div>
