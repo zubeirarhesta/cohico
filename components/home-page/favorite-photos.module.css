@@ -189,7 +189,9 @@
     background: rgba(110, 185, 45, 0.7);
     padding: 0px 10px 5px 10px;
     border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0px;
     border-top-right-radius: 10px;
+    border-top-left-radius: 0px;
     top: 0;
     margin-left: 0;
     text-align: center;
@@ -323,9 +325,10 @@
     position: absolute;
     background: rgba(150, 150, 150, 0.7);
     padding: 0px 10px 5px 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    border-top-left-radius: 0px;
     top: 0;
     margin-left: 0;
     text-align: center;
@@ -337,6 +340,7 @@
     background: rgba(150, 150, 150, 0.7);
     padding: 0px 10px 5px 10px;
     border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     top: 0;
@@ -376,14 +380,13 @@
 
   .aktivitas_skewed_grid:hover > #title_skewed_right h3,
   .aktivitas_skewed_grid:hover > #title_skewed_left h3 {
-    font-size: 0.9rem;
     color: rgb(0, 0, 0);
   }
 
   .aktivitas_skewed_grid:hover > #title_skewed_right {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background: rgb(201, 201, 201);
+    background: rgba(235, 235, 235, 0.8);
     transition: all ease-in-out 0.3s;
   }
 
@@ -391,7 +394,7 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     margin-left: 5px;
-    background: rgb(201, 201, 201);
+    background: rgba(235, 235, 235, 0.8);
     transition: all ease-in-out 0.3s;
   }
 
