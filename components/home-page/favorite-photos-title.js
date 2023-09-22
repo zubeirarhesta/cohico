@@ -12,12 +12,8 @@ export default function FavoritePhotosTitle() {
         flexDirection="column"
       >
         <Heading size={["lg", "xl", "2xl"]}>my featured shots</Heading>
-        <Text
-          size={["md", "lg", "xl"]}
-          color="blackAlpha.600"
-          fontStyle="italic"
-        >
-          berikut adalah foto-foto hasil shot saya
+        <Text size={["md", "lg", "xl"]} color="blackAlpha.600">
+          the followings are my own featured shots
         </Text>
       </Flex>
     </Fragment>
